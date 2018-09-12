@@ -9,9 +9,11 @@ public class Textproc {
 
     public String Yourname() {
         return name;}
-   //длина строки
-    public int Simbnumber() {
-        return name.length();}
+   //число слов
+    public int Simbnumber(String[] mass) {
+        int c=0;
+        for(String sub:mass) c++;
+        return c-1;}
 
     //слова
     public String[] Words() {
