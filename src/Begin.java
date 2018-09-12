@@ -18,11 +18,10 @@ public class Begin {
         Textproc nstr = new Textproc(givenUsingApache_whenGeneratingRandomStringBounded_thenCorrect());
 
         FileWriter fw = new FileWriter("C:\\Users\\Ксения\\IdeaProjects\\Ex1\\src\\main\\java\\Information.txt");
-        fw.write(nstr.Yourname()+" "+nstr.Simbnumber()+" ");
-        for (String Substr:nstr.Words()) fw.write(Substr+" ");
+        fw.write(nstr.Yourname()+" "+nstr.Simbnumber());
+        for (String Substr:nstr.Words()) fw.write(" "+Substr);
         fw.close();
 
     }
 
 }
-
