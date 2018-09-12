@@ -1,6 +1,3 @@
-/**
- * Created by Ксения on 12.09.2018.
- */
 public class Textproc {
 
     String name;
@@ -10,16 +7,17 @@ public class Textproc {
         name = str;
     }
 
-    public void Yourname() {
-        System.out.println(name);}
+    public String Yourname() {
+        return name;}
    //длина строки
-    public void Simbnumber() {
-        System.out.println(name.length());}
+    public int Simbnumber() {
+        return name.length();}
 
     //слова
     public void Words() {
         String[] wordsar = name.split("\\s");
         for(String subStr:wordsar)
-        System.out.println(subStr);}
+            System.out.println(subStr);}
 
 }
+
