@@ -14,10 +14,8 @@ public class Textproc {
         return name.length();}
 
     //слова
-    public void Words() {
-        String[] wordsar = name.split("\\s");
-        for(String subStr:wordsar)
-            System.out.println(subStr);}
+    public String[] Words() {
+      return name.split("\\s");
+    }
 
 }
-
