@@ -22,7 +22,7 @@ public class MainTest {
     public void shouldTestTextEquality() {
 
         TextProc nInst = new TextProc("Hale Hell");
-        assertEquals("Hall Hell", nInst.getText());
+        assertEquals("Hale Hell", nInst.getText());
 
 
     }
