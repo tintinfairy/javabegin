@@ -1,9 +1,7 @@
 import java.io.*;
-import org.apache.commons.lang.RandomStringUtils;
-import java.util.Random;
 public class Begin {
 
-    final static String PATH_TO_FILE =  "tmp/Information.txt";
+    final static String PATH_TO_FILE =  "Information.txt";
 
     public static void main(String[] args) {
         TextProc textProc = new TextProc();
@@ -25,7 +23,8 @@ public class Begin {
             for (String word : textProc.words()) {
                 System.out.println(word);
             }
+            //записываем элементы массива в HashMap
+            textProc.gotoHashMap(textProc.words());
         }
     }
 }
-
