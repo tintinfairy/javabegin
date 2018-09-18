@@ -3,12 +3,11 @@ import org.apache.commons.lang.RandomStringUtils;
 import java.util.Random;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class TextProc {
 
     private String text;
-    private Map<Integer, String> hashmap = new HashMap<Integer, String>();
+    private Map<String, Integer> hashmap = new HashMap<String, Integer>();
 
     public TextProc(String name) {
         this.text = name;
@@ -66,21 +65,21 @@ public class TextProc {
     }
 
     /**
-     * запись полученных слов в HashMap
+     * @return число уникальных слов в тексте
      */
-    public void gotoHashMap(String[] words) {
-        int i = 0;
-        for (String word : words) {
-            hashmap.put(i, word);
-            i++;
+    public int wordsUniqueness(String[] words) {
+        int count = 0;
+        for (String w : words) {
+            Integer i = hashmap.get(w);
+            if (i == null)
+                hashmap.put(w, 1);
+             else hashmap.put(w, i + 1);
         }
-        Set<Map.Entry<Integer, String>> set = hashmap.entrySet();
-        for (Map.Entry<Integer, String> me : set) {
-            System.out.print(me.getKey() + ": ");
-            System.out.println(me.getValue());
+        for (String w : words) {
+            if(hashmap.get(w)==1) count++;
         }
+        return (count);
     }
 
-
-
 }
+
