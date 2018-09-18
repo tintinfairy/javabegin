@@ -1,7 +1,8 @@
 import java.io.*;
+
 public class Begin {
 
-    final static String PATH_TO_FILE =  "Information.txt";
+    final static String PATH_TO_FILE = "Information.txt";
 
     public static void main(String[] args) {
         TextProc textProc = new TextProc();
@@ -14,6 +15,7 @@ public class Begin {
             for (String word : textProc.words()) {
                 pw.println(word);
             }
+            pw.println("Unique Words: " + textProc.wordsUniqueness(textProc.words()));
         } catch (IOException e) {
             System.out.println("Cannot open the file " + PATH_TO_FILE);
 
@@ -23,8 +25,7 @@ public class Begin {
             for (String word : textProc.words()) {
                 System.out.println(word);
             }
-            //записываем элементы массива в HashMap
-            textProc.gotoHashMap(textProc.words());
+            System.out.println("Unique Words: " + textProc.wordsUniqueness(textProc.words()));
         }
     }
 }
