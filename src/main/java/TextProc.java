@@ -73,13 +73,12 @@ public class TextProc {
             Integer i = hashmap.get(w);
             if (i == null)
                 hashmap.put(w, 1);
-             else hashmap.put(w, i + 1);
+            else hashmap.put(w, i + 1);
         }
         for (String w : words) {
-            if(hashmap.get(w)==1) count++;
+            if (hashmap.get(w) == 1) count++;
         }
         return (count);
     }
 
 }
-
