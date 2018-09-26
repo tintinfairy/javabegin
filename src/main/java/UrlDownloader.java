@@ -14,7 +14,7 @@ public class UrlDownloader {
         String url = "https://geekbrains.ru/courses/4";
         Document doc = Jsoup.connect(url).get();
 
-        // gettig title
+        // getting title
         String title = doc.title();
         System.out.println("Title: " + title);
         System.out.println();
