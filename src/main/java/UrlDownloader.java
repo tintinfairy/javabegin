@@ -1,46 +1,26 @@
-import java.io.*;
-import java.net.URL;
-import java.net.MalformedURLException;
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 
 public class UrlDownloader {
 
-    public static void DownloadWebPage(String webpage)
-    {
-        try {
+    public static void main(String[] args) throws IOException {
 
-            // Create URL object
-            URL url = new URL(webpage);
-            BufferedReader readr =
-                    new BufferedReader(new InputStreamReader(url.openStream()));
+        String url = "https://geekbrains.ru/courses/3";
+        Document doc = Jsoup.connect(url).get();
 
-            // Enter filename in which you want to download
-            BufferedWriter writer =
-                    new BufferedWriter(new FileWriter("Download.html"));
+        // gettig title
+        String title = doc.title();
+        System.out.println("Title: " + title);
 
-            // read each line from stream till end
-            String line;
-            while ((line = readr.readLine()) != null) {
-                writer.write(line);
-            }
+        //getting description
+        String description = doc.select("meta[name=description]").first().attr("content");
+        System.out.println("Description : " + description);
 
-            readr.close();
-            writer.close();
-            System.out.println("Successfully Downloaded.");
-        }
-
-        // Exceptions
-        catch (MalformedURLException mue) {
-            System.out.println("Malformed URL Exception raised");
-        }
-        catch (IOException ie) {
-            System.out.println("IOException raised");
-        }
     }
-    public static void main(String args[])
-            throws IOException
-    {
-        String url = "https://docs.oracle.com/javase/7/docs/api/java/net/URL.html";
-        DownloadWebPage(url);
-    }
+
 }
-
