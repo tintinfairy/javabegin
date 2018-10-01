@@ -10,35 +10,47 @@ import com.google.gson.GsonBuilder;
 
 public class UrlDownloader {
 
-    public static void main(String[] args) throws IOException {
+
+    public static String getTitle(Document doc){
+        String title = doc.title();
+        return("Title:" + title);
+
+    }
+
+    public static String getDescription(Document doc){
+        String description = doc.select("meta[name=description]").first().attr("content");
+        return("Description:" + description);
+
+    }
+
+    public static void outputInf() throws IOException {
 
         int id = 1;
         Writer writer = new FileWriter("Output.json");
 
 
-        while (id <= 200) {
+        while (id <= 100) {
 
             String url = "https://geekbrains.ru/courses/" + Integer.toString(id);
             Connection.Response response = Jsoup.connect(url).followRedirects(false).execute();
             if (response.statusCode() != 302) {
 
-                System.out.println("https://geekbrains.ru/courses/" + id);
+                //System.out.println("https://geekbrains.ru/courses/" + id);
                 Document doc = Jsoup.connect(url).get();
 
                 // getting title
-                String title = doc.title();
-                System.out.println("Title:" + title);
+                getTitle(doc);
 
                 //getting description
-                String description = doc.select("meta[name=description]").first().attr("content");
-                System.out.println("Description:" + description);
+                getDescription(doc);
 
                 Gson gson = new GsonBuilder().create();
-                gson.toJson(new Course(title, description), writer);
+                gson.toJson(new Course(getTitle(doc), getDescription(doc)), writer);
             }
 
 
             id++;
+            writer.flush();
         }
         writer.close();
     }
