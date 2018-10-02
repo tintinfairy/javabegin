@@ -1,9 +1,9 @@
 import java.io.*;
 
-public class Begin {
+public class Main {
 
     final static String PATH_TO_FILE = "Information.txt";
-    final static String targetURL = "https://webhook.site/1abbd4d4-1290-4bae-a460-611ada0df55d";
+
 
 
     public static void main(String[] args) {
@@ -21,8 +21,7 @@ public class Begin {
                 pw.println(word);
             }
             pw.println("Unique Words: " + textProc.wordsUniqueness(textProc.words()));
-            information.outputInf();
-            //information.executePost(targetURL, ***)
+            information.run();
 
 
         } catch (IOException e) {
