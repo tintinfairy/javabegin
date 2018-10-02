@@ -3,11 +3,12 @@ import java.io.*;
 public class Begin {
 
     final static String PATH_TO_FILE = "Information.txt";
+    final static String targetURL = "https://webhook.site/1abbd4d4-1290-4bae-a460-611ada0df55d";
+
 
     public static void main(String[] args) {
         TextProc textProc = new TextProc();
-        UrlDownloader information = new UrlDownloader();
-        
+        GeekBrainsCourseCollector information = new GeekBrainsCourseCollector();
 
 
         try (FileWriter fw = new FileWriter(PATH_TO_FILE);) {
@@ -21,7 +22,8 @@ public class Begin {
             }
             pw.println("Unique Words: " + textProc.wordsUniqueness(textProc.words()));
             information.outputInf();
-           
+            //information.executePost(targetURL, ***)
+
 
         } catch (IOException e) {
             System.out.println("Cannot open the file " + PATH_TO_FILE);
