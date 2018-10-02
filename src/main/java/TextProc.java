@@ -81,4 +81,7 @@ public class TextProc {
         return (count);
     }
 
+    public Map<String, Integer> getHashmap() {
+        return hashmap;
+    }
 }
