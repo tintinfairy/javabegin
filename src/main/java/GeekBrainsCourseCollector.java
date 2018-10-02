@@ -10,8 +10,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 
-public class GeekBrainsCourseCollector {
+public class GeekBrainsCourseCollector implements Runnable {
 
+    final static String targetURL = "https://webhook.site/1abbd4d4-1290-4bae-a460-611ada0df55d";
 
     public static String getTitle(Document doc) {
         String title = doc.title();
@@ -25,38 +26,43 @@ public class GeekBrainsCourseCollector {
 
     }
 
-    public static void outputInf() throws IOException {
+    public void run() {
 
-        int id = 1;
-        Writer writer = new FileWriter("Output.json");
+        try {
+            int id = 1;
+            Writer writer = new FileWriter("Output.json");
 
 
-        while (id <= 100) {
+            while (id <= 100) {
 
-            String url = "https://geekbrains.ru/courses/" + Integer.toString(id);
-            Connection.Response response = Jsoup.connect(url).followRedirects(false).execute();
-            if (response.statusCode() != 302) {
+                String url = "https://geekbrains.ru/courses/" + Integer.toString(id);
+                Connection.Response response = Jsoup.connect(url).followRedirects(false).execute();
+                if (response.statusCode() != 302) {
 
-                //System.out.println("https://geekbrains.ru/courses/" + id);
-                Document doc = Jsoup.connect(url).get();
+                    //System.out.println("https://geekbrains.ru/courses/" + id);
+                    Document doc = Jsoup.connect(url).get();
 
-                // getting title
-                getTitle(doc);
+                    // getting title
+                    getTitle(doc);
 
-                //getting description
-                getDescription(doc);
+                    //getting description
+                    getDescription(doc);
 
-                Gson gson = new GsonBuilder().create();
-                gson.toJson(new Course(getTitle(doc), getDescription(doc)), writer);
+                    Gson gson = new GsonBuilder().create();
+                    gson.toJson(new Course(getTitle(doc), getDescription(doc)), writer);
+                    executePost(targetURL,gson.toJson(new Course(getTitle(doc), getDescription(doc))));
+                }
+
+
+                id++;
+                writer.flush();
             }
-
-
-            id++;
-            writer.flush();
+            writer.close();
+        } catch (IOException e) {
         }
-        writer.close();
 
     }
+
 
     public static String executePost(String targetURL, String content) {
         HttpURLConnection connection = null;
@@ -102,5 +108,6 @@ public class GeekBrainsCourseCollector {
             }
         }
     }
+
 
 }
