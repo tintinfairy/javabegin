@@ -12,7 +12,8 @@ import com.google.gson.GsonBuilder;
 
 public class GeekBrainsCourseCollector implements Runnable {
 
-    final static String targetURL = "https://webhook.site/1abbd4d4-1290-4bae-a460-611ada0df55d";
+    final static String targetURL = "https://webhook.site/5c001004-93cc-4248-9448-00975ca26680";
+    public String strJson = "";
 
     public static String getTitle(Document doc) {
         String title = doc.title();
@@ -33,13 +34,12 @@ public class GeekBrainsCourseCollector implements Runnable {
             Writer writer = new FileWriter("Output.json");
 
 
-            while (id <= 100) {
+            while (id <= 5) {
 
                 String url = "https://geekbrains.ru/courses/" + Integer.toString(id);
                 Connection.Response response = Jsoup.connect(url).followRedirects(false).execute();
                 if (response.statusCode() != 302) {
 
-                    //System.out.println("https://geekbrains.ru/courses/" + id);
                     Document doc = Jsoup.connect(url).get();
 
                     // getting title
@@ -50,7 +50,8 @@ public class GeekBrainsCourseCollector implements Runnable {
 
                     Gson gson = new GsonBuilder().create();
                     gson.toJson(new Course(getTitle(doc), getDescription(doc)), writer);
-                    executePost(targetURL,gson.toJson(new Course(getTitle(doc), getDescription(doc))));
+                    strJson = strJson + gson.toJson(new Course(getTitle(doc), getDescription(doc)));
+                    executePost(targetURL, gson.toJson(new Course(getTitle(doc), getDescription(doc))));
                 }
 
 
@@ -63,6 +64,10 @@ public class GeekBrainsCourseCollector implements Runnable {
 
     }
 
+    public String getJson() {
+
+        return strJson;
+    }
 
     public static String executePost(String targetURL, String content) {
         HttpURLConnection connection = null;
