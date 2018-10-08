@@ -8,8 +8,7 @@ public class Course {
 
 
     public Course(String title, String description) {
-        GeekBrainsCourseCollector information = new GeekBrainsCourseCollector();
-        TextProc textProc = new TextProc(information.getJson());
+        TextProc textProc = new TextProc(description);
         this.title = title;
         this.description = description;
         this.uniwords = textProc.getHashmap();
