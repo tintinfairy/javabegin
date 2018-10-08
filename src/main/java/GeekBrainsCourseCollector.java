@@ -34,7 +34,7 @@ public class GeekBrainsCourseCollector implements Runnable {
             Writer writer = new FileWriter("Output.json");
 
 
-            while (id <= 5) {
+            while (id <= 3) {
 
                 String url = "https://geekbrains.ru/courses/" + Integer.toString(id);
                 Connection.Response response = Jsoup.connect(url).followRedirects(false).execute();
@@ -50,7 +50,6 @@ public class GeekBrainsCourseCollector implements Runnable {
 
                     Gson gson = new GsonBuilder().create();
                     gson.toJson(new Course(getTitle(doc), getDescription(doc)), writer);
-                    strJson = strJson + gson.toJson(new Course(getTitle(doc), getDescription(doc)));
                     executePost(targetURL, gson.toJson(new Course(getTitle(doc), getDescription(doc))));
                 }
 
@@ -64,10 +63,6 @@ public class GeekBrainsCourseCollector implements Runnable {
 
     }
 
-    public String getJson() {
-
-        return strJson;
-    }
 
     public static String executePost(String targetURL, String content) {
         HttpURLConnection connection = null;
