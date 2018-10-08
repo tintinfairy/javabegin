@@ -4,14 +4,14 @@ import java.util.Map;
 public class Course {
     private String title;
     private String description;
-    private String[] words;
-    private Map<String, Integer> uniwords = new HashMap<String, Integer>();
-    TextProc textProc = new TextProc();
+    private Map<String, Integer> uniwords;
+
 
     public Course(String title, String description) {
+        GeekBrainsCourseCollector information = new GeekBrainsCourseCollector();
+        TextProc textProc = new TextProc(information.getJson());
         this.title = title;
         this.description = description;
-        this.words = this.description.split("\\s");
         this.uniwords = textProc.getHashmap();
     }
 
