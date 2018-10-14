@@ -17,7 +17,6 @@ public class ClientTester {
             ( new Thread(new MultiThreadServer())).start();
             socket = new Socket("localhost", 3345);
             System.out.println("Client connected to socket");
-            Thread.sleep(2000);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -46,7 +45,7 @@ public class ClientTester {
             System.out.println("reading...");
             String inn = ois.readUTF();
             System.out.println(inn);
-            Thread.sleep(5000);
+
 
         } catch (IOException e) {
             // TODO Auto-generated catch block
