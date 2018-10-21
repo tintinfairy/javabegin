@@ -6,12 +6,14 @@ import java.io.IOException;
 import java.net.Socket;
 import java.io.EOFException;
 
-public class MonoThreadClientHandler implements Runnable, ServerComands{
+public class MonoThreadClientHandler implements Runnable {
 
     private static Socket clientDialog;
 
-    public MonoThreadClientHandler(Socket client) {
+    Log my_logger = new Log("LogHandler.txt");
+    public MonoThreadClientHandler(Socket client) throws IOException {
         MonoThreadClientHandler.clientDialog = client;
+
     }
 
     public void run() {
@@ -20,11 +22,11 @@ public class MonoThreadClientHandler implements Runnable, ServerComands{
 
             DataOutputStream out = new DataOutputStream(clientDialog.getOutputStream());
             DataInputStream in = new DataInputStream(clientDialog.getInputStream());
-            System.out.println("DataInputStream created");
-            System.out.println("DataOutputStream  created");
+            my_logger.logger.info("DataInputStream created");
+            my_logger.logger.info("DataOutputStream  created");
 
             while (!clientDialog.isClosed()) {
-                System.out.println("Server reading from channel");
+                my_logger.logger.info("Server reading from channel");
 
                 String entry;
                 try {
@@ -33,12 +35,12 @@ public class MonoThreadClientHandler implements Runnable, ServerComands{
                     break;
                 }
 
-                System.out.println("READ from clientDialog message - " + entry);
+                my_logger.logger.info("READ from clientDialog message - " + entry);
 
 
                 switch (entry) {
                     case "quit":
-                        System.out.println("Client said QUIT");
+                        my_logger.logger.info("Client said QUIT");
                         out.writeUTF("Server reply - " + entry + "-OK");
                         clientDialog.close();
                         break;
@@ -47,21 +49,21 @@ public class MonoThreadClientHandler implements Runnable, ServerComands{
                         out.writeUTF("Hello, client");
                         break;
                     default:
-                        System.out.println("Server try writing to channel");
+                        my_logger.logger.info("Server try writing to channel");
                         out.writeUTF("Server reply - " + entry + "-OK");
                 }
 
 
 
-                System.out.println("Server Wrote message to clientDialog.");
+                my_logger.logger.info("Server Wrote message to clientDialog.");
 
                 out.flush();
 
             }
 
 
-            System.out.println("Client disconnected");
-            System.out.println("Closing connections & channels.");
+            my_logger.logger.info("Client disconnected");
+            my_logger.logger.info("Closing connections & channels.");
 
 
             in.close();
@@ -70,12 +72,9 @@ public class MonoThreadClientHandler implements Runnable, ServerComands{
 
             clientDialog.close();
 
-            System.out.println("Closing connections & channels - DONE.");
+            my_logger.logger.info("Closing connections & channels - DONE.");
         } catch (IOException e) {
             e.printStackTrace();
-        } /*catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }*/
+        }
     }
 }
