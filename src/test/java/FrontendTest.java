@@ -7,7 +7,9 @@ import myserver.MultiThreadServer;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Objects;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -16,42 +18,73 @@ import org.json.simple.parser.ParseException;
 
 public class FrontendTest {
     @Test
-    public void run() {
-        try (MultiThreadServer server = new MultiThreadServer();
-             Socket socket = new Socket("localhost", 3345);
-             DataOutputStream oos = new DataOutputStream(socket.getOutputStream());
-             DataInputStream ois = new DataInputStream(socket.getInputStream());) {
-            JSONParser parser = new JSONParser();
-            String result = "";
+    public void run() throws IOException, ParseException {
+        MultiThreadServer server = new MultiThreadServer();
+        Socket socket = new Socket("localhost", 3345);
+        ServerSocket storage = new ServerSocket(3333);
+        DataOutputStream outSocket = new DataOutputStream(socket.getOutputStream());
+        DataInputStream inSocket = new DataInputStream(socket.getInputStream());
 
-            new Thread(server).start();
+        JSONParser parser = new JSONParser();
+        String result = "";
 
-            oos.writeUTF("{\"cmd\":\"get_all_courses\",\"body\":{}}");
-            oos.flush();
-            String in = ois.readUTF();
+        new Thread(server).start();
 
-            Object obj = parser.parse(in);
-            JSONObject jsonObject = (JSONObject) obj;
+        String cmd = "{\"cmd\":\"get_all_courses\",\"body\":{}}";
+        Object obj = parser.parse(cmd);
+        JSONObject jsObject = (JSONObject) obj;
+        String c = (String) jsObject.get("cmd");
+        if (Objects.equals(c, "get_all_courses")) {
+            outSocket.writeUTF(cmd);
+            outSocket.flush();
+            Socket backend = storage.accept();
+            DataOutputStream outBackend = new DataOutputStream(backend.getOutputStream());
+            DataInputStream inBackend = new DataInputStream(backend.getInputStream());
+
+            outBackend.writeUTF("{\"cmd\":\"get_all_courses\",\"user_id\":321123,\"body\":{\"page\":0,\"courses\":[{\"title\":\"course1\",\"description\":\"description1\"},{\"title\":\"course2\",\"description\":\"description2\"}]}}");
+            outBackend.flush();
+
+            String inn = inBackend.readUTF();
+            obj = parser.parse(inn);
+            jsObject = (JSONObject) obj;
+            cmd = (String) jsObject.get("cmd");
+            if (Objects.equals(cmd, "close")) {
+                outBackend.writeUTF("{\"cmd\":\"get_all_courses\",\"body\":{}}");
+                backend.close();
+                storage.close();
+            }
+
+            String in = inSocket.readUTF();
+
+
+            Object object = parser.parse(in);
+            JSONObject jsonObject = (JSONObject) object;
             JSONObject body = (JSONObject) jsonObject.get("body");
             JSONArray courses = (JSONArray) body.get("courses");
 
             for (Object courseObj : courses.toArray()) {
-                        JSONObject course = (JSONObject) courseObj;
-                        String title = (String) course.get("title");
+                JSONObject course = (JSONObject) courseObj;
+                String title = (String) course.get("title");
 
-                        String description = (String) course.get("description");
-                        result+=title + " " + description + " ";
-                    }
+                String description = (String) course.get("description");
+                result += title + " " + description + " ";
+            }
 
+            outSocket.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
+            outSocket.flush();
+            in = inSocket.readUTF();
+            obj = parser.parse(in);
+            jsObject = (JSONObject) obj;
+            cmd = (String) jsObject.get("cmd");
 
+            if (Objects.equals(cmd, "close")) {
+
+                socket.close();
+            }
             assertEquals("Server should reply correct courses list", "course1 description1 course2 description2 ", result);
 
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
         }
+
 
     }
 }
