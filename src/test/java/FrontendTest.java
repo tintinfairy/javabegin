@@ -41,15 +41,20 @@ public class FrontendTest {
             DataOutputStream outBackend = new DataOutputStream(backend.getOutputStream());
             DataInputStream inBackend = new DataInputStream(backend.getInputStream());
 
+            cmd = inBackend.readUTF();
+            obj = parser.parse(cmd);
+            jsObject = (JSONObject) obj;
+            c = (String) jsObject.get("cmd");
+            if(Objects.equals(c, "get_all_courses")){
             outBackend.writeUTF("{\"cmd\":\"get_all_courses\",\"user_id\":321123,\"body\":{\"page\":0,\"courses\":[{\"title\":\"course1\",\"description\":\"description1\"},{\"title\":\"course2\",\"description\":\"description2\"}]}}");
-            outBackend.flush();
+            outBackend.flush();}
 
             String inn = inBackend.readUTF();
             obj = parser.parse(inn);
             jsObject = (JSONObject) obj;
             cmd = (String) jsObject.get("cmd");
             if (Objects.equals(cmd, "close")) {
-                outBackend.writeUTF("{\"cmd\":\"get_all_courses\",\"body\":{}}");
+                outBackend.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
                 backend.close();
                 storage.close();
             }

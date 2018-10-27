@@ -16,8 +16,6 @@ public class MonoThreadClientHandler implements Runnable {
 
     private static Socket clientDialog;
 
-    Log my_logger = new Log("LogHandler.txt");
-
     public MonoThreadClientHandler(Socket frontend) throws IOException {
         MonoThreadClientHandler.clientDialog = frontend;
 
@@ -31,15 +29,10 @@ public class MonoThreadClientHandler implements Runnable {
             DataOutputStream outFrontend = new DataOutputStream(clientDialog.getOutputStream());
             DataInputStream inFrontend = new DataInputStream(clientDialog.getInputStream());
 
-            my_logger.logger.info("DataInputStream created");
-            my_logger.logger.info("DataOutputStream  created");
             JSONParser parser = new JSONParser();
             String cmd = null;
 
             while (!clientDialog.isClosed()) {
-                my_logger.logger.info("Server reading from channel");
-
-
                 String entry;
                 try {
                     entry = inFrontend.readUTF();
@@ -52,9 +45,6 @@ public class MonoThreadClientHandler implements Runnable {
                 Object obj = parser.parse(entry);
                 JSONObject jsonObject = (JSONObject) obj;
                 cmd = (String) jsonObject.get("cmd");
-
-
-                my_logger.logger.info("READ from clientDialog message - " + entry);
 
 
                 if (Objects.equals(cmd, "get_all_courses")) {
@@ -94,30 +84,17 @@ public class MonoThreadClientHandler implements Runnable {
 
 
                 } else {
-
-                    my_logger.logger.info("Server try writing to channel");
                     outFrontend.writeUTF("Server reply - " + entry + "-OK");
                 }
-
-
-                my_logger.logger.info("Server Wrote message to clientDialog.");
-
                 outFrontend.flush();
 
             }
-
-
-            my_logger.logger.info("Client disconnected");
-            my_logger.logger.info("Closing connections & channels.");
-
 
             inFrontend.close();
             outFrontend.close();
 
 
             clientDialog.close();
-
-            my_logger.logger.info("Closing connections & channels - DONE.");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {
