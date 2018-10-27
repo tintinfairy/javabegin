@@ -1,3 +1,4 @@
+import myserver.PortsConfigReader;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -20,7 +21,8 @@ public class FrontendTest {
     @Test
     public void run() throws IOException, ParseException {
         MultiThreadServer server = new MultiThreadServer();
-        Socket socket = new Socket("localhost", 3345);
+        int port = PortsConfigReader.getInstance().getPort();
+        Socket socket = new Socket("localhost", port);
         ServerSocket storage = new ServerSocket(3333);
         DataOutputStream outSocket = new DataOutputStream(socket.getOutputStream());
         DataInputStream inSocket = new DataInputStream(socket.getInputStream());

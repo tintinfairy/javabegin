@@ -4,7 +4,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.io.EOFException;
 
 
 import myserver.handlers.CloseHandler;
@@ -35,14 +34,7 @@ public class MonoThreadClientHandler implements Runnable {
 
             while (!clientDialog.isClosed()) {
                 String entry;
-                try {
-                    entry = inFrontend.readUTF();
-
-                } catch (EOFException e) {
-                    break;
-                }
-
-
+                entry = inFrontend.readUTF();
                 Object obj = parser.parse(entry);
                 JSONObject jsonObject = (JSONObject) obj;
                 cmd = (String) jsonObject.get("cmd");

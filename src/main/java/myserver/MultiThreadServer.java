@@ -15,14 +15,9 @@ public class MultiThreadServer extends Thread implements Closeable  {
     static ExecutorService executeIt = Executors.newFixedThreadPool(2);
     boolean isClosed = false;
     private ServerSocket server;
-
+    int port = PortsConfigReader.getInstance().getPort();
     public MultiThreadServer() throws IOException {
-        try {
-
-            server = new ServerSocket(3345);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            server = new ServerSocket(port);
     }
 
 
