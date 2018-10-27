@@ -5,9 +5,10 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.io.EOFException;
-import java.util.Objects;
 
 
+import myserver.handlers.CloseHandler;
+import myserver.handlers.GetAllCoursesHandler;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -17,6 +18,7 @@ public class MonoThreadClientHandler implements Runnable {
     private static Socket clientDialog;
 
     public MonoThreadClientHandler(Socket frontend) throws IOException {
+
         MonoThreadClientHandler.clientDialog = frontend;
 
     }
@@ -24,7 +26,6 @@ public class MonoThreadClientHandler implements Runnable {
     public void run() {
 
         try {
-
 
             DataOutputStream outFrontend = new DataOutputStream(clientDialog.getOutputStream());
             DataInputStream inFrontend = new DataInputStream(clientDialog.getInputStream());
@@ -47,58 +48,38 @@ public class MonoThreadClientHandler implements Runnable {
                 cmd = (String) jsonObject.get("cmd");
 
 
-                if (Objects.equals(cmd, "get_all_courses")) {
+                switch (cmd) {
+                    case ("get_all_courses"): {
 
-                    Socket storage = new Socket("localhost", 3333);
-                    DataOutputStream outStorage = new DataOutputStream(storage.getOutputStream());
-                    DataInputStream inStorage = new DataInputStream(storage.getInputStream());
+                        GetAllCoursesHandler handlerGet =new GetAllCoursesHandler(clientDialog, entry);
+                        handlerGet.run();
+                        break;
+                    }
+                    case ("close"): {
 
-                    outStorage.writeUTF("{\"cmd\":\"get_all_courses\",\"body\":{}}");
-                    outStorage.flush();
-                    String result = inStorage.readUTF();
+                        CloseHandler closeHandler = new CloseHandler(clientDialog,entry);
+                        closeHandler.run();
+                        break;
 
-                    if (result != null) outStorage.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
-                    outStorage.flush();
-
-
-                    outFrontend.writeUTF(result);
-
-                    entry = inStorage.readUTF();
-                    obj = parser.parse(entry);
-                    jsonObject = (JSONObject) obj;
-                    cmd = (String) jsonObject.get("cmd");
-                    if (Objects.equals(cmd, "close")) {
-                        outStorage.writeUTF("Socket is closed!");
-                        storage.close();
                     }
 
-
-                    entry = inFrontend.readUTF();
-                    obj = parser.parse(entry);
-                    jsonObject = (JSONObject) obj;
-                    cmd = (String) jsonObject.get("cmd");
-                    if (Objects.equals(cmd, "close")) {
-                        outFrontend.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
-                        clientDialog.close();
+                    default: {
+                        outFrontend.writeUTF("Server reply - " + entry + "-OK");
+                        outFrontend.flush();
                     }
 
-
-                } else {
-                    outFrontend.writeUTF("Server reply - " + entry + "-OK");
                 }
-                outFrontend.flush();
-
             }
 
-            inFrontend.close();
-            outFrontend.close();
+                inFrontend.close();
+                outFrontend.close();
 
 
-            clientDialog.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            } catch(ParseException e){
+                e.printStackTrace();
+            }
         }
+
     }
-}
