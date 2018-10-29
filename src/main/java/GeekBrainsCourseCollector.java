@@ -13,7 +13,6 @@ import com.google.gson.GsonBuilder;
 public class GeekBrainsCourseCollector implements Runnable {
 
     final static String targetURL = "https://webhook.site/5c001004-93cc-4248-9448-00975ca26680";
-    public String strJson = "";
 
     public static String getTitle(Document doc) {
         String title = doc.title();

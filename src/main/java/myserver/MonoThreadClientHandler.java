@@ -24,8 +24,10 @@ public class MonoThreadClientHandler implements Runnable {
 
     public void run() {
 
+
         try {
 
+            Log my_logger = new Log("LogServer.txt");
             DataOutputStream outFrontend = new DataOutputStream(clientDialog.getOutputStream());
             DataInputStream inFrontend = new DataInputStream(clientDialog.getInputStream());
 
@@ -35,6 +37,7 @@ public class MonoThreadClientHandler implements Runnable {
             while (!clientDialog.isClosed()) {
                 String entry;
                 entry = inFrontend.readUTF();
+                my_logger.logger.info("Server is listening Frontend");
                 Object obj = parser.parse(entry);
                 JSONObject jsonObject = (JSONObject) obj;
                 cmd = (String) jsonObject.get("cmd");
@@ -43,14 +46,15 @@ public class MonoThreadClientHandler implements Runnable {
                 switch (cmd) {
                     case ("get_all_courses"): {
 
+                        my_logger.logger.info("Server was asked to get all courses");
                         GetAllCoursesHandler handlerGet =new GetAllCoursesHandler(clientDialog, entry);
                         handlerGet.run();
                         break;
                     }
                     case ("close"): {
-
                         CloseHandler closeHandler = new CloseHandler(clientDialog,entry);
                         closeHandler.run();
+                        my_logger.logger.info("Server is closed");
                         break;
 
                     }
@@ -63,15 +67,15 @@ public class MonoThreadClientHandler implements Runnable {
                 }
             }
 
-                inFrontend.close();
-                outFrontend.close();
+            inFrontend.close();
+            outFrontend.close();
 
 
-            } catch(IOException e){
-                e.printStackTrace();
-            } catch(ParseException e){
-                e.printStackTrace();
-            }
+        } catch(IOException e){
+            e.printStackTrace();
+        } catch(ParseException e){
+            e.printStackTrace();
         }
-
     }
+
+}

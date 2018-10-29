@@ -15,10 +15,10 @@ public class PortsConfigReader {
 
     private PortsConfigReader(){
         try{
-        JSONParser parser = new JSONParser();
-        Object obj = parser.parse(new FileReader("ports.json"));
-        JSONObject jsonObject = (JSONObject) obj;
-        this.port = ((Long)jsonObject.get("backend_port")).intValue();
+            JSONParser parser = new JSONParser();
+            Object obj = parser.parse(new FileReader("ports.json"));
+            JSONObject jsonObject = (JSONObject) obj;
+            this.port = ((Long)jsonObject.get("backend_port")).intValue();
         } catch (ParseException e){
             e.printStackTrace();
             this.port = defaultPort;
