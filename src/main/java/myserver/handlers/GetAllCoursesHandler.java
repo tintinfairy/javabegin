@@ -19,7 +19,7 @@ public class GetAllCoursesHandler extends ClientMessageHandler {
         super(socket, cmd);
     }
 
-    public void run(){
+    public void run() {
         try {
             JSONParser parser = new JSONParser();
             Socket storage = new Socket("localhost", 3333);
@@ -46,20 +46,13 @@ public class GetAllCoursesHandler extends ClientMessageHandler {
             }
 
 
-
-        } catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-        catch (ParseException e) {
+        } catch (ParseException e) {
             e.printStackTrace();
         }
 
 
     }
-
-
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8dfea58d22d3c60948c37dfa2cd28eb4b994c362
+

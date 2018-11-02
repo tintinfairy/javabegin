@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 8dfea58d22d3c60948c37dfa2cd28eb4b994c362
 import org.junit.Test;
 import static org.junit.Assert.*;
 import myserver.MultiThreadServer;

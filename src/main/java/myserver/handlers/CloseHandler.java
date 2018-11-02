@@ -11,14 +11,14 @@ import java.util.Objects;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class CloseHandler extends ClientMessageHandler{
+public class CloseHandler extends ClientMessageHandler {
 
 
     public CloseHandler(Socket socket, String cmd) throws IOException {
         super(socket, cmd);
     }
 
-    public void run(){
+    public void run() {
 
         try {
 
@@ -30,8 +30,4 @@ public class CloseHandler extends ClientMessageHandler{
         }
 
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8dfea58d22d3c60948c37dfa2cd28eb4b994c362

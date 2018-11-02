@@ -13,29 +13,27 @@ public class PortsConfigReader {
     private int port;
 
 
-    private PortsConfigReader(){
-        try{
+    private PortsConfigReader() {
+        try {
             JSONParser parser = new JSONParser();
             Object obj = parser.parse(new FileReader("ports.json"));
             JSONObject jsonObject = (JSONObject) obj;
-            this.port = ((Long)jsonObject.get("backend_port")).intValue();
-        } catch (ParseException e){
+            this.port = ((Long) jsonObject.get("backend_port")).intValue();
+        } catch (ParseException e) {
             e.printStackTrace();
             this.port = defaultPort;
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
             this.port = defaultPort;
         }
 
     }
-    public static PortsConfigReader getInstance(){
+
+    public static PortsConfigReader getInstance() {
         return INSTANCE;
     }
+
     public int getPort() {
         return port;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8dfea58d22d3c60948c37dfa2cd28eb4b994c362
