@@ -1,0 +1,22 @@
+окт 29, 2018 2:45:41 PM FrontendTest run
+INFO: Client wants to get all courses
+окт 29, 2018 2:45:41 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+окт 29, 2018 2:45:41 PM myserver.MonoThreadClientHandler run
+INFO: Server was asked to get all courses
+окт 29, 2018 2:45:41 PM FrontendTest run
+INFO: Storage gives all courses list to server
+окт 29, 2018 2:45:41 PM FrontendTest run
+INFO: Storage is closed
+окт 29, 2018 2:45:41 PM FrontendTest run
+INFO: Frontend parses courses
+окт 29, 2018 2:45:41 PM FrontendTest run
+INFO: Frontend parses courses
+окт 29, 2018 2:45:41 PM FrontendTest run
+INFO: Frontend asks server to close
+окт 29, 2018 2:45:41 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+окт 29, 2018 2:45:41 PM myserver.MonoThreadClientHandler run
+INFO: Server is closed
+окт 29, 2018 2:45:41 PM FrontendTest run
+INFO: Frontend is closed
