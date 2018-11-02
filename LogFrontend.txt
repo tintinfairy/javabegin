@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 окт 29, 2018 2:45:41 PM FrontendTest run
 INFO: Client wants to get all courses
 окт 29, 2018 2:45:41 PM myserver.MonoThreadClientHandler run
@@ -19,4 +20,713 @@ INFO: Server is listening Frontend
 окт 29, 2018 2:45:41 PM myserver.MonoThreadClientHandler run
 INFO: Server is closed
 окт 29, 2018 2:45:41 PM FrontendTest run
+=======
+окт 22, 2018 11:34:19 AM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 11:34:19 AM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 11:34:19 AM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - Hello, server
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - quit
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Client said QUIT
+окт 22, 2018 11:34:19 AM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 11:34:19 AM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 12:16:28 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 12:16:28 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - Hello, server
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 12:16:28 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 12:16:28 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 12:18:24 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 12:18:24 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 12:18:24 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 12:18:25 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 12:18:25 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 12:18:25 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:18:25 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - Hello, server
+окт 22, 2018 12:18:25 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 12:18:25 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 12:18:25 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:20:16 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 12:20:16 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 12:20:16 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - Hello, server
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 12:20:16 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 12:20:16 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 12:39:43 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 12:39:44 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 12:39:44 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 12:39:44 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 12:39:44 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 1:04:43 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 1:04:43 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 1:04:43 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 1:04:43 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 1:04:43 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 1:05:31 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 1:05:31 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 1:05:31 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 1:05:31 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 1:05:31 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 1:05:31 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 1:05:31 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 1:05:31 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 1:05:31 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 1:05:31 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 1:15:04 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 1:15:04 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 1:15:04 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 1:15:04 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 1:15:04 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 3:00:07 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 3:00:07 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 3:00:07 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 3:00:07 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 3:00:07 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 3:00:07 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 3:00:07 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 5:09:34 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 5:09:34 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 5:09:34 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 5:09:34 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 5:09:34 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 5:13:12 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 5:13:12 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 5:13:12 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 5:13:12 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 5:13:12 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 5:14:34 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 5:14:34 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 5:14:34 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 5:14:34 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 5:14:34 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 5:15:29 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 5:15:29 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 5:15:29 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 5:15:29 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 5:15:29 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 5:15:30 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:16:05 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 5:16:06 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 5:16:06 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 5:16:06 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 5:16:06 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 5:55:26 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 5:55:26 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 5:55:26 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 5:55:26 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 5:55:26 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 5:55:26 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:01:58 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:01:58 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:01:58 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:01:58 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:01:58 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:01:58 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:01:58 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:01:59 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 7:01:59 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:01:59 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:01:59 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:02:48 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:02:48 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:02:48 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:02:48 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:02:48 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:02:48 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:02:48 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:02:49 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 7:02:49 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:02:49 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:02:49 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:02:49 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:02:49 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:02:49 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 7:04:36 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:04:36 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:04:36 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:04:36 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:04:36 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 7:05:43 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:05:43 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:05:44 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:05:44 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:05:44 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 7:08:27 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:08:27 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:08:27 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: Server try writing to channel
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:08:27 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:08:27 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 7:10:57 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:10:57 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:10:57 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:10:57 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:10:57 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 7:11:54 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:11:55 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:11:55 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:11:55 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:11:55 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:11:55 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:11:55 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:11:55 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:11:55 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:11:55 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:12:50 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:12:51 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:12:51 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:12:51 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:12:51 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:12:51 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:12:51 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:12:51 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:12:51 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:12:51 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:13:25 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:13:25 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:13:25 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:13:25 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:13:25 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:13:25 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:13:25 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:13:25 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:13:25 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:13:25 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:16:46 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:16:46 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:16:46 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:16:46 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:16:46 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 7:17:10 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:17:10 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:17:10 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:17:10 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:17:10 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 7:18:32 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 7:18:32 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 7:18:32 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","user_id":321123,"body":{"page":0,"courses":[{"title":"course1","description":"description1"},{"title":"course2","description":"description2"}]}}
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 7:18:32 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels.
+окт 22, 2018 7:18:32 PM myserver.MonoThreadClientHandler run
+INFO: Closing connections & channels - DONE.
+окт 22, 2018 10:55:02 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 10:55:02 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 10:55:02 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 10:55:02 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 10:55:02 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 10:55:02 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 10:55:02 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","body":{}}
+окт 22, 2018 10:55:02 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 10:55:02 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 10:55:02 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 10:55:55 PM myserver.MultiThreadServer <init>
+INFO: Server started
+окт 22, 2018 10:55:55 PM myserver.MultiThreadServer run
+INFO: Server socket created, command console reader for listen to server commands
+окт 22, 2018 10:55:55 PM myserver.MultiThreadServer run
+INFO: Connection accepted.
+окт 22, 2018 10:55:55 PM myserver.MonoThreadClientHandler run
+INFO: DataInputStream created
+окт 22, 2018 10:55:55 PM myserver.MonoThreadClientHandler run
+INFO: DataOutputStream  created
+окт 22, 2018 10:55:55 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 10:55:55 PM myserver.MonoThreadClientHandler run
+INFO: READ from clientDialog message - {"cmd":"get_all_courses","body":{}}
+окт 22, 2018 10:55:55 PM myserver.MonoThreadClientHandler run
+INFO: Server Wrote message to clientDialog.
+окт 22, 2018 10:55:55 PM myserver.MultiThreadServer close
+INFO: Server is closed.
+окт 22, 2018 10:55:55 PM myserver.MonoThreadClientHandler run
+INFO: Server reading from channel
+окт 22, 2018 10:55:55 PM myserver.MonoThreadClientHandler run
+INFO: Client disconnected
+окт 29, 2018 12:16:03 PM FrontendTest run
+INFO: Client wants to get all courses
+окт 29, 2018 12:16:03 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+окт 29, 2018 12:16:03 PM myserver.MonoThreadClientHandler run
+INFO: Server was asked to get all courses
+окт 29, 2018 12:16:03 PM FrontendTest run
+INFO: Storage gives all courses list to server
+окт 29, 2018 12:16:03 PM FrontendTest run
+INFO: Storage is closed
+окт 29, 2018 12:16:03 PM FrontendTest run
+INFO: Frontend parses courses
+окт 29, 2018 12:16:03 PM FrontendTest run
+INFO: Frontend parses courses
+окт 29, 2018 12:16:03 PM FrontendTest run
+INFO: Frontend asks server to close
+окт 29, 2018 12:16:03 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+окт 29, 2018 12:16:03 PM myserver.MonoThreadClientHandler run
+INFO: Server is closed
+окт 29, 2018 12:16:03 PM FrontendTest run
+>>>>>>> 8dfea58d22d3c60948c37dfa2cd28eb4b994c362
 INFO: Frontend is closed
