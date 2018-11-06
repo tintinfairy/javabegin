@@ -8,6 +8,8 @@ import java.net.Socket;
 
 import myserver.handlers.CloseHandler;
 import myserver.handlers.GetAllCoursesHandler;
+import myserver.handlers.GreetingHandler;
+
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -55,6 +57,14 @@ public class MonoThreadClientHandler implements Runnable {
                         CloseHandler closeHandler = new CloseHandler(clientDialog, entry);
                         closeHandler.run();
                         my_logger.logger.info("Server is closed");
+                        break;
+
+                    }
+
+                    case ("greeting"): {
+                        GreetingHandler greetingHandler = new GreetingHandler(clientDialog, entry);
+                        greetingHandler.run();
+                        my_logger.logger.info("Frontend greets server");
                         break;
 
                     }

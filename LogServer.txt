@@ -60,3 +60,97 @@ INFO: Server is listening Frontend
 INFO: Server is closed
 ноя 02, 2018 8:52:35 PM FrontendTest run
 INFO: Frontend is closed
+ноя 06, 2018 8:53:57 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 8:53:57 PM myserver.MonoThreadClientHandler run
+INFO: Server was asked to get all courses
+ноя 06, 2018 8:53:57 PM FrontendTest run
+INFO: Storage gives all courses list to server
+ноя 06, 2018 8:53:57 PM FrontendTest run
+INFO: Storage is closed
+ноя 06, 2018 8:53:57 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 8:53:57 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 8:53:57 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 8:55:52 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 8:55:52 PM myserver.MonoThreadClientHandler run
+INFO: Server was asked to get all courses
+ноя 06, 2018 8:55:52 PM FrontendTest run
+INFO: Storage gives all courses list to server
+ноя 06, 2018 8:55:52 PM FrontendTest run
+INFO: Storage is closed
+ноя 06, 2018 8:55:52 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 8:55:52 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 8:55:52 PM FrontendTest run
+INFO: Frontend asks server to close
+ноя 06, 2018 8:55:52 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 8:55:52 PM myserver.MonoThreadClientHandler run
+INFO: Server is closed
+ноя 06, 2018 8:55:52 PM FrontendTest run
+INFO: Frontend is closed
+ноя 06, 2018 9:02:55 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 9:02:55 PM myserver.MonoThreadClientHandler run
+INFO: Server was asked to get all courses
+ноя 06, 2018 9:02:55 PM FrontendTest run
+INFO: Storage gives all courses list to server
+ноя 06, 2018 9:02:55 PM FrontendTest run
+INFO: Storage is closed
+ноя 06, 2018 9:02:55 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 9:02:55 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 9:02:55 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 9:02:55 PM FrontendTest run
+INFO: Server got the greeting
+ноя 06, 2018 9:02:55 PM myserver.MonoThreadClientHandler run
+INFO: Frontend greets server
+ноя 06, 2018 9:02:55 PM FrontendTest run
+INFO: Frontend asks server to close
+ноя 06, 2018 9:04:10 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 9:04:10 PM myserver.MonoThreadClientHandler run
+INFO: Server was asked to get all courses
+ноя 06, 2018 9:04:10 PM FrontendTest run
+INFO: Storage gives all courses list to server
+ноя 06, 2018 9:04:10 PM FrontendTest run
+INFO: Storage is closed
+ноя 06, 2018 9:04:10 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 9:04:10 PM FrontendTest run
+INFO: Frontend parses courses
+ноя 06, 2018 9:04:10 PM FrontendTest run
+INFO: Frontend asks server to close
+ноя 06, 2018 9:04:10 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 9:04:10 PM myserver.MonoThreadClientHandler run
+INFO: Frontend greets server
+ноя 06, 2018 9:19:01 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 9:19:01 PM FrontendTest run
+INFO: Server got the greeting
+ноя 06, 2018 9:19:01 PM myserver.MonoThreadClientHandler run
+INFO: Frontend greets server
+ноя 06, 2018 9:19:01 PM FrontendTest run
+INFO: Frontend asks server to close
+ноя 06, 2018 9:19:52 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 9:19:52 PM myserver.MonoThreadClientHandler run
+INFO: Frontend greets server
+ноя 06, 2018 9:19:52 PM FrontendTest run
+INFO: Server got the greeting
+ноя 06, 2018 9:19:52 PM FrontendTest run
+INFO: Frontend asks server to close
+ноя 06, 2018 9:19:52 PM myserver.MonoThreadClientHandler run
+INFO: Server is listening Frontend
+ноя 06, 2018 9:19:52 PM FrontendTest run
+INFO: Frontend is closed
+ноя 06, 2018 9:19:52 PM myserver.MonoThreadClientHandler run
+INFO: Server is closed
