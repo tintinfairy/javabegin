@@ -22,7 +22,7 @@ public class CloseHandler extends ClientMessageHandler {
 
         try {
 
-            out.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
+            out.writeUTF("{\"cmd\":\"close\",\"client_id\":1234,\"body\":{}}");
             socket.close();
 
         } catch (IOException e) {

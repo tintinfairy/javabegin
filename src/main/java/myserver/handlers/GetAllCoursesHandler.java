@@ -26,11 +26,11 @@ public class GetAllCoursesHandler extends ClientMessageHandler {
             DataOutputStream outStorage = new DataOutputStream(storage.getOutputStream());
             DataInputStream inStorage = new DataInputStream(storage.getInputStream());
 
-            outStorage.writeUTF("{\"cmd\":\"get_all_courses\",\"body\":{}}");
+            outStorage.writeUTF("{\"cmd\":\"get_all_courses\",\"client_id\":1234,\"body\":{}}");
             outStorage.flush();
             String result = inStorage.readUTF();
 
-            if (result != null) outStorage.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
+            if (result != null) outStorage.writeUTF("{\"cmd\":\"close\",\"client_id\":1234,\"body\":{}}");
             outStorage.flush();
 
 

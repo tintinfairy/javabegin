@@ -41,7 +41,7 @@ public class FrontendTest {
         String c = (String) jsObject.get("cmd");*/
 
         my_logger.logger.info("Client wants to greet server");
-        String cmd = "{\"cmd\":\"greeting\",\"user_id\": 1234,\"body\":{}}";
+        String cmd = "{\"cmd\":\"greeting\",\"client_id\": 1234,\"body\":{}}";
         Object obj = parser.parse(cmd);
         JSONObject jsObject = (JSONObject) obj;
         String c = (String) jsObject.get("cmd");
@@ -59,7 +59,7 @@ public class FrontendTest {
                 c = (String) jsObject.get("cmd");
                 if (Objects.equals(c, "get_all_courses")) {
                     my_logger.logger.info("Storage gives all courses list to server");
-                    outBackend.writeUTF("{\"cmd\":\"get_all_courses\",\"user_id\":321123,\"body\":{\"page\":0,\"courses\":[{\"title\":\"course1\",\"description\":\"description1\"},{\"title\":\"course2\",\"description\":\"description2\"}]}}");
+                    outBackend.writeUTF("{\"cmd\":\"get_all_courses\",\"user_id\":321123,\"client_id\":1234,\"body\":{\"page\":0,\"courses\":[{\"title\":\"course1\",\"description\":\"description1\"},{\"title\":\"course2\",\"description\":\"description2\"}]}}");
                     outBackend.flush();
                 }
 
@@ -68,7 +68,7 @@ public class FrontendTest {
                 jsObject = (JSONObject) obj;
                 cmd = (String) jsObject.get("cmd");
                 if (Objects.equals(cmd, "close")) {
-                    outBackend.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
+                    outBackend.writeUTF("{\"cmd\":\"close\",\"client_id\":1234,\"body\":{}}");
                     backend.close();
                     storage.close();
                     my_logger.logger.info("Storage is closed");
@@ -93,7 +93,7 @@ public class FrontendTest {
 
 
                 my_logger.logger.info("Frontend asks server to close");
-                outSocket.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
+                outSocket.writeUTF("{\"cmd\":\"close\",\"client_id\":1234,\"body\":{}}");
                 outSocket.flush();
                 in = inSocket.readUTF();
                 obj = parser.parse(in);
@@ -117,7 +117,7 @@ public class FrontendTest {
                     my_logger.logger.info("Server got the greeting");
                 }
                 my_logger.logger.info("Frontend asks server to close");
-                outSocket.writeUTF("{\"cmd\":\"close\",\"body\":{}}");
+                outSocket.writeUTF("{\"cmd\":\"close\",\"client_id\":1234,\"body\":{}}");
                 outSocket.flush();
                 String in = inSocket.readUTF();
                 obj = parser.parse(in);

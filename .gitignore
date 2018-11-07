@@ -3,3 +3,6 @@ target/
 tmp/
 .idea/
 Ex1.iml
+LogFrontend.txt
+LogServer.txt
+ports.json
